@@ -1,0 +1,126 @@
+<web-app>
+	<welcome-file-list>
+		<welcome-file>employeeHome.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>AddOrEditEmployee</servlet-name>
+		<servlet-class>com.harini.employee.AddOrEditEmployee</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AddOrEditEmployee</servlet-name>
+		<url-pattern>/AddOrEditEmployee</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>ShowEmployeesList</servlet-name>
+		<servlet-class>com.harini.employee.ShowEmployeesList</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ShowEmployeesList</servlet-name>
+		<url-pattern>/ShowEmployeesList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditEmployeeServlet</servlet-name>
+		<servlet-class>com.harini.employee.EditEmployeeServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>EditEmployeeServlet</servlet-name>
+		<url-pattern>/EditEmployeeServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+
+
+
+
+
+
+	<servlet>
+		<servlet-name>error</servlet-name>
+		<servlet-class>com.harini.practicePrograms.ShowError</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>error</servlet-name>
+		<url-pattern>/error</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>employeePrint</servlet-name>
+		<servlet-class>com.harini.practicePrograms.EmployeePrintTable</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>employeePrint</servlet-name>
+		<url-pattern>/employeePrint</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HeadersServlet</servlet-name>
+		<servlet-class>com.harini.practicePrograms.HeadersServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>HeadersServlet</servlet-name>
+		<url-pattern>/HeadersServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>setCookie</servlet-name>
+		<servlet-class>com.harini.practicePrograms.SetCookieServlet</servlet-class>
+	</servlet>	
+	
+	<servlet-mapping>
+		<servlet-name>setCookie</servlet-name>
+		<url-pattern>/setCookie</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>getCookie</servlet-name>
+		<servlet-class>com.harini.practicePrograms.getCookieServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>getCookie</servlet-name>
+		<url-pattern>/getCookie</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AttributeScopeServlet</servlet-name>
+		<servlet-class>com.harini.practicePrograms.AttributeScopeServlet
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AttributeScopeServlet</servlet-name>
+		<url-pattern>/AttributeScopeServlet</url-pattern>
+	</servlet-mapping>
+
+	
+
+	<filter>
+		<filter-name>Filter1</filter-name>
+		<filter-class>com.harini.practicePrograms.LoginFilter</filter-class>
+	</filter>
+
+
+	<filter-mapping>
+		<filter-name>Filter1</filter-name>
+		<url-pattern>/Login</url-pattern>
+	</filter-mapping>
+
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://harini.com/display.tld</taglib-uri>
+			<taglib-location>/WEB-INF/display.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+
+
+</web-app>  
